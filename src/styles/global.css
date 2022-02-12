@@ -54,10 +54,13 @@
 
 html,
 body {
+  height: 100%;
   min-height: 100%;
+  margin: 0;
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: var(--font-family);
   font-size: 1rem;
@@ -108,8 +111,7 @@ h5 {
 
 h2,
 h3,
-h4,
-h5 {
+h4 {
   color: var(--secondary);
   font-weight: 500;
 }
@@ -120,6 +122,10 @@ a {
 }
 
 /* CONTENT */
+
+.box {
+  height: 100vh;
+}
 
 .container {
   margin-left: auto;
@@ -303,15 +309,17 @@ article {
   padding-bottom: 3rem;
 }
 
-article header {
-  padding-top: 4rem;
+article header,
+section header {
+  padding-top: 4.5rem;
   text-align: center;
 }
 
-article h1 {
+article h1,
+section h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.95rem;
   color: var(--secondary);
 }
 
@@ -327,8 +335,10 @@ article h4 {
   border-bottom: 1px solid var(--light-border-color);
 }
 
-article .description {
+article .description,
+section .description {
   padding: 1.5rem;
+  margin-bottom: 0;
   border: 1px solid var(--blockquote-background-color);
   border-left: 8px solid var(--secondary);
   background: var(--blockquote-background-color);
@@ -338,11 +348,46 @@ article .description {
   color: var(--dark-font-color);
 }
 
+/* BLOCKQUOTES */
+
+blockquote {
+  padding: 1.5rem;
+  background: var(--blockquote-background-color);
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+  text-indent: 1.2rem;
+}
+
+blockquote p {
+  font-size: 1.1rem;
+  color: var(--dark-font-color);
+  font-family: var(--heading-font-family);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+blockquote strong {
+  color: var(--secondary);
+}
+
+blockquote::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  border-radius: 7px;
+  box-shadow: inset -2px -2px 1px hsl(0 0% 100%),
+    inset 2px 2px 4px hsl(0 0% 0% / 20%);
+}
+
 article a {
   font-weight: 600;
   color: var(--primary);
   border-radius: 2px;
-  padding: 4px;
+  padding: 2px;
   border-top: 2px solid transparent;
   border-bottom: 2px solid var(--secondary);
 }
@@ -370,6 +415,31 @@ article li a,
 article li a:hover {
   border-top: none;
   border-bottom: none;
+}
+
+/* BLOG */
+.post-details {
+  margin: 0.2rem 0;
+  color: var(--dark-font-color);
+  font-family: var(--heading-font-family);
+  font-size: 0.9reml;
+}
+
+.post-details h1 {
+  color: var(--ternary);
+}
+
+.post-details a {
+  border-bottom: none;
+}
+
+.blog-page h2 {
+  margin-top: 2.5rem;
+  /* border-bottom: 1px solid var(--light-border-color); */
+}
+
+.post-link h2:hover {
+  color: var(--primary);
 }
 
 /* FOOTER */

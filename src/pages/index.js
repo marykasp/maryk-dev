@@ -45,9 +45,9 @@ export default function Home({ data }) {
         </header>
         <div className="container">
           <h2 className="main-header">
-            <span>Latests Posts</span> <Link to="/blog">View All</Link>
+            <span>Information</span> <Link to="/blog">View All</Link>
           </h2>
-
+          <p>My site has no ads, no affiliate links, no tracking or analytics, no sponsored posts, and no paywall. My only motivation for this site is to share what I've learned with the world and document notes for myself as I go through the curriculum. Hopefully by documenting my journey I will be able to connect and meet new people along the way.</p>
         </div>
       </article>
     </Layout>

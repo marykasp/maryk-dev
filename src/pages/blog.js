@@ -1,34 +1,41 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 export default function Blog({ data }) {
   const { posts } = data.blog
   return (
     <Layout>
-      <article className="blog-page">
+      <section className="blog-page">
           <header>
             <div className="container">
-              <h1>Blog Posts</h1>
+              <h1>Blog.</h1>
               <p className="description">Thoughts, tutorials, snippets, reference materials, and all resources I've written for my journey through Launch School and beyond.</p>
             </div>
           </header>
-          <section>
-            <div className="container">
+          <div className="container">
               {posts.map(post => {
                 const { frontmatter, excerpt, id } = post;
                 const { title, date, author } = frontmatter;
                 return (
-                  <article key={id}>
-                    <h2>{title}</h2>
-                    <small>{author}, {date}</small>
-                    <p>{excerpt}</p>
-                  </article>
+                  <div>
+                    <div key={id} className="post">
+                      <Link to={post.fields.slug} className="post-link">
+                      <h2>{title}</h2>
+                      </Link>
+                      <p>{excerpt}</p>
+                    </div>
+                    <div className="post-details">
+                      <small>
+                        Written by <Link to="/about">{author}  </Link>
+                      </small>
+                      <small>{date}</small>
+                    </div>
+                  </div>
                 )
               })}
           </div>
-        </section>
-      </article>
+      </section>
 
     </Layout>
   )
@@ -45,6 +52,9 @@ query MyQuery {
       }
       excerpt
       id
+      fields {
+        slug
+      }
     }
   }
 }

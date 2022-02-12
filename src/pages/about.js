@@ -8,10 +8,8 @@ export default function About() {
       <article>
         <header>
           <div className="container">
-            <div>
               <h1>About Me.</h1>
               <p className="description">Software engineer student at Launch School - Ruby Track</p>
-            </div>
           </div>
         </header>
         <section className="container">
