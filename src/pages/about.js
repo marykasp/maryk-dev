@@ -15,7 +15,7 @@ export default function About() {
         <section className="container">
           <p>This site was created to share my coding journey experience. To help flesh out the knowledge in my own mind and maybe help a few who are also pushing through the world of tech. My main motivation for this site (besides being a requirement from LS) is to share and document notes for myself, and hopefully connect with other students or developers.</p>
           <p>Check out the <Link to="/projects">projects</Link> page to see the things I have worked on in the past, before deciding to join Launch School. Hoping to add more open-source projects I've made as I continue through the courses.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste rem, fuga a officia beatae, similique praesentium placeat, harum nisi doloremque! Amet velit facere beatae id, minus reprehenderit soluta quo!</p>
+          <p>This is currently a work in progress. So pages on the site will be updated and things here and there will be fixed. Just wanted to get this deployed to see how things turned out. Thanks for your patience.</p>
           <h3>Currently Working On</h3>
           <p>
             <em>Updated February 11, 2022</em>

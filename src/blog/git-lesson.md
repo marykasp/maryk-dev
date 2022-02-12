@@ -1,7 +1,7 @@
 ---
 title: Git Tutorial - Getting Started with Version Control
 author: Mary
-date: 2022-02-13 13:05
+date: 2022-02-13 15:30
 ---
 
 Git is a difficult subject to tackle for self taught web developers who didn't learn to code with a team. If you've always worked alone and want an explanation of how to get started with Git, this tutorial is for you.
