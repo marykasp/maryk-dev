@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 
-import profile from '../assets/profile-pic.png'
+import profile from '../assets/fruity-profile-pic.png'
 import avocado from '../assets/Avocado.png'
 import github from '../assets/github.png'
 

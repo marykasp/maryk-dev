@@ -47,7 +47,7 @@ query MyQuery {
     posts: nodes {
       frontmatter {
         author
-        date(fromNow: true)
+        date(formatString: "MM/DD/YYYY")
         title
       }
       excerpt

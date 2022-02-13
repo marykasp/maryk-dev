@@ -3,14 +3,12 @@ import React from 'react'
 
 import canteloupe from '../assets/Cantaloupe.png'
 import avocado from '../assets/Avocado.png'
-import blueberry from '../assets/Blueberry.png'
 import peach from '../assets/Peach.png'
 
 const mainNavItems = [
   { url: '/', icon: canteloupe, label: 'Home' },
   { url: '/about', icon: avocado, label: 'Me' },
   { url: '/blog', icon: peach, label: 'Blog' },
-  { url: '/projects', icon: blueberry, label: 'Projects' },
 ]
 
 export default function Navbar() {
