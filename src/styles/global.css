@@ -60,10 +60,9 @@ body {
 }
 
 body {
-  height: 100%;
   margin: 0;
   font-family: var(--font-family);
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: var(--font-color);
   background: var(--background-color);
@@ -73,7 +72,7 @@ p,
 ol,
 ul,
 blockquote {
-  font-size: 1.06rem;
+  font-size: 1.15rem;
   margin: 0 0 2rem;
   color: var(--font-color);
 }
@@ -123,14 +122,16 @@ a {
 
 /* CONTENT */
 
-.box {
-  height: 100vh;
+main {
+  margin-top: 60px;
+  min-height: calc(100vh - 215px);
+  background: var(--background-color);
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
+  padding: 1.5rem;
   max-width: var(--page-width);
 }
 
