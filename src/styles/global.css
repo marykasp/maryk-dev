@@ -33,6 +33,8 @@
   --scrollbar: var(--border-color);
   --scrollbar-track: var(--light-border-color);
   --button-color: #9657a8;
+  --orange: #f68668;
+  --green: #abc063;
   --page-width: 850px;
 
   /* Font */
@@ -62,7 +64,7 @@ body {
 body {
   margin: 0;
   font-family: var(--font-family);
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--font-color);
   background: var(--background-color);
@@ -72,7 +74,7 @@ p,
 ol,
 ul,
 blockquote {
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin: 0 0 2rem;
   color: var(--font-color);
 }
@@ -105,7 +107,7 @@ h5 {
   margin: 0 0 1.5rem 0;
   line-height: 1.2;
   color: var(--heading-font-color);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2,
@@ -118,6 +120,14 @@ h4 {
 a {
   text-decoration: none;
   font-family: var(--heading-font-family);
+}
+
+strong {
+  color: var(--ternary);
+}
+
+em {
+  color: var(--ternary);
 }
 
 /* CONTENT */
@@ -165,7 +175,7 @@ main {
 }
 
 .hero p.subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .hero .hero-buttons {
@@ -330,6 +340,10 @@ article h5 {
   margin: 0 0 1.25rem 0;
 }
 
+article h3 {
+  color: var(--green);
+}
+
 article h4 {
   margin-bottom: 0.75rem;
   border-bottom: 1px solid var(--light-border-color);
@@ -359,11 +373,11 @@ blockquote {
 }
 
 blockquote p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--dark-font-color);
   font-family: var(--heading-font-family);
-  font-style: italic;
-  line-height: 1.6;
+  /* font-style: italic; */
+  /* line-height: 1.6; */
 }
 
 blockquote strong {
@@ -537,7 +551,7 @@ article li a:hover {
   }
 
   .navigation nav img {
-    max-width: 20px;
+    max-width: 25px;
   }
 
   .navigation nav .brand-section {
@@ -580,7 +594,7 @@ article li a:hover {
 
   .main-image {
     margin: 0 0 1rem 0;
-    width: 150px;
+    width: 350px;
   }
 
   .flex-content div {
@@ -592,10 +606,10 @@ article li a:hover {
   }
 
   .container {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .navigation-inner {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }

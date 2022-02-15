@@ -22,9 +22,7 @@ export default function Home({ data }) {
               </div>
               <img src={profile} alt="Me" className="main-image"/>
             </div>
-            <p>
-              <span>This site is a work in progress...</span>
-            </p>
+
             <p className="hero-buttons">
               <Link to="/about" className="hero-button">
                 <img src={avocado} alt="Me" />
