@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Contact from '../components/Contact'
 import { graphql } from 'gatsby'
 
 export default function BlogPost({ data }) {
@@ -21,6 +22,7 @@ export default function BlogPost({ data }) {
           </div>
         </div>
       </article>
+      <Contact />
     </Layout>
   )
 }

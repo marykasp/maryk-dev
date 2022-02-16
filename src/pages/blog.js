@@ -15,21 +15,19 @@ export default function Blog({ data }) {
           </header>
           <div className="container">
               {posts.map(post => {
-                const { frontmatter, excerpt, id } = post;
+                const { frontmatter, id } = post;
                 const { title, date, author } = frontmatter;
                 return (
-                  <div>
+                  <div className="flex">
                     <div key={id} className="post">
                       <Link to={post.fields.slug} className="post-link">
                       <h2>{title}</h2>
                       </Link>
-                      <p>{excerpt}</p>
-                    </div>
-                    <div className="post-details">
-                      <small>
+                      <small className="post-details">
                         Written by <Link to="/about">{author}  </Link>
+                        {date}
                       </small>
-                      <small>{date}</small>
+                      {/* <p>{excerpt}</p> */}
                     </div>
                   </div>
                 )
