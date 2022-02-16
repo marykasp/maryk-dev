@@ -77,7 +77,7 @@ blockquote {
   font-size: 1rem;
   margin: 0 0 2rem;
   color: var(--font-color);
-  line-height: 29px;
+  line-height: 1.625rem;
 }
 
 ol li,
@@ -185,6 +185,7 @@ main {
 
 .hero p.subtitle {
   font-size: 1.1rem;
+  line-height: 1.7rem;
 }
 
 .hero .hero-buttons {
@@ -346,16 +347,17 @@ article h2,
 article h3,
 article h4,
 article h5 {
-  margin: 0 0 1.25rem 0;
+  margin: 1.2rem 0 1.25rem 0;
 }
 
 article h3 {
-  color: var(--green);
+  color: var(--ternary);
 }
 
 article h4 {
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid var(--light-border-color);
+  color: var(--green);
+  /* margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--light-border-color); */
 }
 
 article .description,
@@ -374,36 +376,22 @@ section .description {
 /* BLOCKQUOTES */
 
 blockquote {
-  padding: 1.5rem;
+  padding: 0 1rem;
   background: var(--blockquote-background-color);
   border-radius: 8px;
   box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
-  text-indent: 1.2rem;
 }
 
 blockquote p {
   font-size: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   color: var(--dark-font-color);
   font-family: var(--heading-font-family);
-  /* font-style: italic; */
-  /* line-height: 1.6; */
 }
 
 blockquote strong {
   color: var(--secondary);
-}
-
-blockquote::before {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  right: 0;
-  border-radius: 7px;
-  box-shadow: inset -2px -2px 1px hsl(0 0% 100%),
-    inset 2px 2px 4px hsl(0 0% 0% / 20%);
 }
 
 article a {
@@ -441,32 +429,39 @@ article li a:hover {
 }
 
 /* BLOG */
-.post {
-  line-height: 1.1;
-}
-
-.post-details {
-  margin: 0 0;
-  color: var(--dark-font-color);
-  font-family: var(--heading-font-family);
-  font-size: 0.9rem;
-}
-
-.post-details h1 {
-  color: var(--ternary);
-}
-
-.post-details a {
-  border-bottom: none;
-}
-
 .blog-page h2 {
   margin-top: 2rem;
   /* border-bottom: 1px solid var(--light-border-color); */
 }
 
-.post-link h2:hover {
-  color: var(--primary);
+a.post {
+  grid-gap: 1rem;
+  align-items: center;
+  border: 1px solid transparent;
+  display: grid;
+  grid-template-columns: auto 60px;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.4rem 1rem;
+}
+
+a.post:hover {
+  background: #fef1df;
+  border-left: 3px solid var(--ternary);
+  font-family: var(--heading-font-family);
+  border-radius: 8px;
+}
+
+a.post h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.post-date {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  padding: 0;
 }
 
 /* CONTACT ON BLOG PAGE */
@@ -484,6 +479,12 @@ article li a:hover {
   height: 100%;
   justify-content: space-between;
   max-width: var(--page-width);
+}
+
+.contact-buttons img {
+  display: inline-block;
+  max-height: 20px;
+  width: auto;
 }
 
 .contact-buttons nav {
@@ -508,8 +509,7 @@ article li a:hover {
 }
 
 .contact-buttons nav a:hover {
-  color: #fff;
-  background: var(--ternary);
+  color: var(--secondary);
 }
 
 /* FOOTER */

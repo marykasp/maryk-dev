@@ -1,9 +1,12 @@
 import React from 'react'
+import twitter from '../assets/nav-twitter.png'
+import github from '../assets/nav-github.png'
+import mail from "../assets/nav-mail.png"
 
 const links = [
-  { url: 'https://www.github.com/marykasp', label: 'Github' },
-  { url: 'https://www.marykasparian.com/rss.xml', label: 'Tweet' },
-  { url: "mailto: abc@example.com", label: "Send email"}
+  { url: 'https://www.github.com/marykasp', label: 'Github', icon: github },
+  { url: 'https://twitter.com/mary_kasparian', label: 'Twitter', icon: twitter },
+  { url: "mailto: kasparian.mary@gmail.com", label: "Send email", icon: mail },
 ]
 
 export default function Contact() {
@@ -22,6 +25,7 @@ export default function Contact() {
                   key={link.url}
                 >
                   {link.label}
+                  <img src={link.icon} alt={link.label} />
                 </a>
           ))}
         </nav>

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/Layout'
-
-import watermelon from '../assets/Watermelon.png'
+import Contact from '../components/Contact'
 
 export default function About() {
   return (
@@ -41,7 +40,7 @@ export default function About() {
               Writing about my coding journey
             </li>
             <li>
-              Making endless books to be read lists
+              Journaling daily the analog way
             </li>
           </ul>
           <h2>Random Facts</h2>
@@ -57,15 +56,12 @@ export default function About() {
               I've worked in genetics research for nearly a decade before deciding to change careers
             </li>
             <li>
-              I'm in the middle of working on setting up a Twithc stream where I may get a view every now and then 😂
+              I'm in the middle of working on setting up a Twitch stream where I may get a view every now and then 😂
             </li>
           </ul>
           <h2>Connect</h2>
           <p>You can contact me by email at <strong>marykasparian@gmail.com</strong> I love meeting new people!</p>
-          <div className='flex-content'>
-            <img src={watermelon} alt="watermelon" width="60" height="60"/>
-            <p>This is currently a work in progress. So pages on the site will be updated and things here and there will be fixed. Just wanted to get this deployed to see how things turned out. Thanks for your patience.</p>
-          </div>
+          <Contact />
         </section>
       </article>
     </Layout>

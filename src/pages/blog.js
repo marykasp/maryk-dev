@@ -16,19 +16,18 @@ export default function Blog({ data }) {
           <div className="container">
               {posts.map(post => {
                 const { frontmatter, id } = post;
-                const { title, date, author } = frontmatter;
+                const { title, date} = frontmatter;
                 return (
-                  <div className="flex">
-                    <div key={id} className="post">
-                      <Link to={post.fields.slug} className="post-link">
-                      <h2>{title}</h2>
-                      </Link>
-                      <small className="post-details">
-                        Written by <Link to="/about">{author}  </Link>
-                        {date}
-                      </small>
-                      {/* <p>{excerpt}</p> */}
-                    </div>
+                  <div className="posts">
+                    <Link to={post.fields.slug} className="post">
+                      <span key={id} className="flex flex-align-center flex-justify-between">
+                        <h3>{title}</h3>
+                        <span className="new-badge"></span>
+                        <div>
+                          <time className="post-date">{date}</time>
+                        </div>
+                      </span>
+                    </Link>
                   </div>
                 )
               })}
@@ -45,7 +44,7 @@ query MyQuery {
     posts: nodes {
       frontmatter {
         author
-        date(formatString: "MM/DD/YYYY")
+        date(formatString: "dddd DD MMMM YYYY")
         title
       }
       excerpt

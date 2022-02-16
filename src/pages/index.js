@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import profile from '../assets/fruity-profile-pic.png'
 import avocado from '../assets/Avocado.png'
 import github from '../assets/github.png'
+import watermelon from '../assets/Watermelon.png'
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
@@ -46,6 +47,10 @@ export default function Home({ data }) {
             <span>Information</span> <Link to="/blog">View All</Link>
           </h2>
           <p>My site has no ads, no affiliate links, no tracking or analytics, no sponsored posts, and no paywall. My only motivation for this site is to share what I've learned with the world and document notes for myself as I go through the curriculum. Hopefully by documenting my journey I will be able to connect and meet new people along the way.</p>
+          <div className='flex-content'>
+            <img src={watermelon} alt="watermelon" width="60" height="60"/>
+            <p>This is currently a work in progress. So pages on the site will be updated and things here and there will be fixed. Just wanted to get this deployed to see how things turned out. Thanks for your patience.</p>
+          </div>
         </div>
       </article>
     </Layout>
