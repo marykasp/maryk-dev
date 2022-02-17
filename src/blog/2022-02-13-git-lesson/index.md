@@ -45,7 +45,7 @@ The basic commands you will need to know to get started using the Command Line a
 
 When you open terminal you will start off in your main directory. To begin you need to confirm where you are in your computer file structure, create a new folder called new-project, and then list your directories.
 
-```bash
+```shell:title=terminal
 $ pwd
 $ mkdir new-project
 $ ls
@@ -55,7 +55,7 @@ You should now see the **project-new** directory that you just created. You can 
 
 Now move into the newly created directroy.
 
-```bash
+```bash:title=terminal
 cd new-project
 ```
 
@@ -75,14 +75,14 @@ All the commands that we do will only apply to your local git environment. In or
 
 You need to configure your global Git account
 
-```bash
+```bash:title=terminal
 $ git config --global user.name "Firstname Lastname"
 $ git config --global user.email username@email.com
 ```
 
 Once that is done check again that you are in the correct project folder and then initialize the Git repository
 
-```bash
+```bash:title=terminal
 $ git init
 ```
 

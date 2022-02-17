@@ -19,7 +19,7 @@ export default function About() {
           <p>A little about myself for those who are curious: I used to work as a research scientist in a **Genetics** lab for nearly a decade. Before that I worked as a chemist before realizing my passion was more in the medical field. So I spent more time in school and moved on to working in a biology lab in Chicago.</p>
           <p>Fast forward to the present and I have decided to switch careers again. Maybe third time is a charm? We shall see, so I found myself taking the plunge and subscribing to Launch School Program the beginning of 2022. About a month later and I am finally here to share what I have learned. </p>
 
-          <h3>Currently Working On</h3>
+          <h3>Currently Enjoying</h3>
           <p>
             <em>Updated February 11, 2022</em>
           </p>
@@ -28,7 +28,7 @@ export default function About() {
               Cuddling with my dogs & a good book
             </li>
             <li>
-              Playing <em>FFXIV</em> - almost to Endwalker expansion
+              Playing <em>FFXIV</em>
             </li>
             <li>
               Finding other video games to enjoy
@@ -37,7 +37,7 @@ export default function About() {
               Studying for Launch School RB101 Assessment
             </li>
             <li>
-              Writing about my coding journey
+              Playing around with styling this blog & Writing about my coding journey
             </li>
             <li>
               Journaling daily the analog way
@@ -50,7 +50,7 @@ export default function About() {
               I've been interested in coding since fiddling with MySpace
             </li>
             <li>
-              I read a lot of fantasy books - favorites are <strong>Name of the Wind</strong>
+              I read a lot of fantasy books - one of my all time favorites is  <a href="https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind" target="_blank">Name of the Wind</a>
             </li>
             <li>
               I've worked in genetics research for nearly a decade before deciding to change careers

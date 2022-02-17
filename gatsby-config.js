@@ -23,6 +23,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-code-titles`,
+            options: {
+              className: `code-title`
+            }
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               inlineCodeMarker: null,
@@ -32,7 +38,7 @@ module.exports = {
               prompt: {
                 user: "root",
                 host: "localhost",
-                global: false,
+                global: true,
               },
               escapeEntities: {},
             },

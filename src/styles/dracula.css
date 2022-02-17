@@ -5,12 +5,32 @@
  * Ported for PrismJS by Albert Vallverdu [@byverdu]
  */
 
+.command-line-prompt > span:before {
+  color: #999;
+  content: " ";
+  display: block;
+  padding-right: 0.8em;
+}
+
+/* Prompt for all users */
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] $";
+}
+
+/* Prompt for root */
+.command-line-prompt > span[data-user="your_name"]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] #";
+}
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt);
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #f8f8f2;
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  /* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
   font-family: "Menlo";
   font-size: 0.86rem;
   text-align: left;
@@ -30,8 +50,9 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: 1.9em 0;
+  padding: 1.2em 1em;
+  margin: 0 0;
+  margin-bottom: 1.9em;
   overflow: auto;
   border-radius: 0.3em;
 }
@@ -43,6 +64,8 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
+  background: #fdfaf6;
+  color: black;
   padding: 0.3em;
   border-radius: 0.3em;
   white-space: normal;
@@ -121,4 +144,29 @@ pre[class*="language-"] {
 
 .token.entity {
   cursor: help;
+}
+
+.code-title {
+  display: block;
+  padding: 0.5em 0.8em;
+  font-size: 0.8rem;
+  font-family: Consolas, Monaco, "Andale Mono";
+  background-color: #494c62;
+  color: white;
+  z-index: 0;
+  top: 10px;
+  position: relative;
+  border-left: 0.25em solid #ff79c6;
+  border-top-right-radius: 0.3em;
+  border-top-left-radius: 0.3em;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #494c62;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #fff;
 }
