@@ -28,10 +28,7 @@ export default function About() {
               Cuddling with my dogs & a good book
             </li>
             <li>
-              Playing <em>FFXIV</em>
-            </li>
-            <li>
-              Finding other video games to enjoy
+              Finding puzzle solving or cozy video games to enjoy
             </li>
             <li>
               Studying for Launch School RB101 Assessment
@@ -56,7 +53,7 @@ export default function About() {
               I've worked in genetics research for nearly a decade before deciding to change careers
             </li>
             <li>
-              I'm in the middle of working on setting up a Twitch stream where I may get a view every now and then 😂
+              I used to be a tap dancer and I try to dabble in that in my free time
             </li>
           </ul>
           <h2>Connect</h2>
