@@ -56,7 +56,7 @@ export default function About() {
             </li>
           </ul>
           <h2>Connect</h2>
-          <p>You can contact me by email at <strong>marykasparian@gmail.com</strong> I love meeting new people!</p>
+          <p>You can contact me by email at <strong>kasparian.mary@gmail.com</strong> I love meeting new people!</p>
           <Contact />
         </section>
       </article>

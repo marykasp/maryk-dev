@@ -36,6 +36,10 @@ The majority of my time spent in the lesson; however were on the larger projects
 
 At this point in time I have only met a few students and have slowly been becoming more active on **Slack**. I am the type of person who likes to be overprepared since I am pretty shy in a group setting. So that anxiety prevented me from reaching out more.
 
+![Heatmap](heatmap.png)
+
+My _Github calander heatmap_ shows how active I have been since officially starting the program. I did the prep work in December 2021 and officially started the course the second week of **January 2022**. Took a break from coding during the holidays and for a vacation in January. Almost every other day I have been trying to push code/notes to Github.
+
 ## The Blog
 
 At the end of RB101 Launch School encourages students to write a blog post. Which I thought was a great idea to share knowledge and it would also help reinforce the concepts. So I journeyed out to finally create this blog. I always wanted to learn Gatsby and I had previously learned **JavaScript** in another bootcamp, so I gave it a try. Rather than making it easy on myself, I started from the most basic normal template and worked my way to figuring out how to make it a blog.
