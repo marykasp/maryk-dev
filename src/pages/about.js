@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
 
@@ -14,14 +13,14 @@ export default function About() {
           </div>
         </header>
         <section className="container">
-          <p>This site was created to share my coding journey experience. To help flesh out the knowledge in my own mind and maybe help a few who are also pushing through the world of tech. My main motivation for this site (besides being a requirement from LS) is to share and document notes for myself, and hopefully connect with other students or developers.</p>
-          <p>Check out the <Link to="/projects">projects</Link> page to see the things I have worked on in the past, before deciding to join Launch School. Hoping to add more open-source projects I've made as I continue through the courses.</p>
-          <p>A little about myself for those who are curious: I used to work as a research scientist in a **Genetics** lab for nearly a decade. Before that I worked as a chemist before realizing my passion was more in the medical field. So I spent more time in school and moved on to working in a biology lab in Chicago.</p>
+          <p>This site was created to share my coding journey experience. To help flesh out the knowledge in my own mind and maybe help a few who are also pushing through the world of tech. My main motivation for this site is to share and document notes for myself, and hopefully connect with other students or developers.</p>
+          <p>Check out my <a href="https://github.com/marykasp"> Github </a> page to see the things I have worked on in the past, before deciding to join Launch School. Hoping to add more open-source projects I've made as I continue through the courses.</p>
+          <p>A little about myself for those who are curious: I used to work as a research scientist in a <strong>Genetics</strong> lab for nearly a decade. Before that I worked as a chemist before realizing my passion was more in the medical field. So I spent more time in school and moved on to working in a biology lab in Chicago.</p>
           <p>Fast forward to the present and I have decided to switch careers again. Maybe third time is a charm? We shall see, so I found myself taking the plunge and subscribing to Launch School Program the beginning of 2022. About a month later and I am finally here to share what I have learned. </p>
 
           <h3>Currently Enjoying</h3>
           <p>
-            <em>Updated February 11, 2022</em>
+            <em>Updated March 1, 2022</em>
           </p>
           <ul>
             <li>
@@ -31,7 +30,7 @@ export default function About() {
               Finding puzzle solving or cozy video games to enjoy
             </li>
             <li>
-              Studying for Launch School RB101 Assessment
+              Studying for Launch School RB109 Interview Assessment
             </li>
             <li>
               Playing around with styling this blog & Writing about my coding journey
@@ -47,7 +46,7 @@ export default function About() {
               I've been interested in coding since fiddling with MySpace
             </li>
             <li>
-              I read a lot of fantasy books - one of my all time favorites is  <a href="https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind" target="_blank">Name of the Wind</a>
+              I read a lot of fantasy books - one of my all time favorites is  <a href="https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind" target="_blank" rel="noreferrer">Name of the Wind</a>
             </li>
             <li>
               I've worked in genetics research for nearly a decade before deciding to change careers

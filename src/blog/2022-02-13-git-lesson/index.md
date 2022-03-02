@@ -130,7 +130,7 @@ $ git commit -am "Initial commit"
 
 With this command, all the files (`-a`), include a message (`-m`), listed here ("Initial commit"). All the options in this command are mandatory.
 
-> Remember to add a message when you commit your files. There are best practices for commenting in Git. For one they should be in present tense and you should group commits where you performed a similar update. If you forget to add a message, you will end up in a strange screen where you can no longer enter any commands, press ESC and type `:q!` follwed by **ENTER**
+> Remember to add a message when you commit your files. There are best practices for commenting in Git. For one they should be in present tense and you should group commits where you performed a similar update.
 
 Finally we can push all the files to the Git repo at github.com
 
@@ -139,39 +139,5 @@ $ git push origin master
 ```
 
 Terminal will prompt you to enter your Github username and password. Now you can refresh the Github page. You should now see all your files hosted on Github.com! Congrats, success!
-
-## Push to Live Server
-
-Your files are being tracked by Git and saved remotely to Github. Now if you want your site to be uploaded to the web you will need to be hosted somewhere. To upload your files to that host's server.
-
-When you upload to a server via FTP you will need to have the following information from your host provider:
-
-- Host: ftp.domain.com
-- Username: user
-- Password: **\*\***
-
-You will enter your credentials into an FTP GUI such as **FileZilla** and you will be in. **SSH** (Secure Shell) is very similar - in the command prompt you will use the ssh command to enter the host. You host should show you your SSH settings by your FTP settings.
-
-```bash
-$ ssh username@ssh.domain.com
-```
-
-Then you will be prompted to enter your password. Now you will be into the host server!
-
-Now you can make a folder in your host's directory. It can match the name of your Github repo or not. Once you're in, you will follow many of the same steps as before, except this time we will be _pulling_ from Github, instead of pushing (uploading) from local to Github.
-
-Remember since you are connected to the host server you don't currently have access to your local files. So in the server you will
-
-- initialize a Git repo
-- add remote Git repo to origin master (branch): now called **main**
-- Pull from the origin master (main branch)
-
-```bash
-$ git init
-$ git remote add origin https://github.com/you/project.git
-$ git pull origin master
-```
-
-Now all the files you had in your Github remote repo will be host's server and live on the web!
 
 I hope this quick and simple tutorial helped you get a start on how essential **Git** is to a developer's workflow and work environment!
