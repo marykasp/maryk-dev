@@ -15,6 +15,7 @@ export default function BlogPost({ data }) {
               <h5>Written by {post.frontmatter.author}</h5>
               <small>{post.frontmatter.date}</small>
               <h1>{post.frontmatter.title}</h1>
+              <h3>{post.frontmatter.subtitle}</h3>
             </div>
           </header>
           <div className="post">
@@ -34,6 +35,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        subtitle
         date(formatString: "MM/DD/YYYY")
         author
       }

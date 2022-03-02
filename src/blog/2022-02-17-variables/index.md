@@ -74,7 +74,7 @@ total = 0
 
 Blocks can access and modify variables that are defined outside the block. So the block following`Array#each` method is able to access and modify the total variable. In this case `total` is reassigned to a new object upon each iteration.
 
-Not all `do/end` pairs imply a block - those following a `loop` or a `for` loop is not considered a block in Ruby. They do not create their own inner scope instead they have the same scope as the outer.
+Not all `do/end` pairs imply a block - those following a `while` or a `for` loop for example. `{}` and `do/end` is called a block in this case but they do not create their own inner scope instead they have the same scope as the outer.
 
 > Inner scope can access variables initalized in an outer scope, but not vice versa
 
