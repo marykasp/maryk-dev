@@ -374,9 +374,6 @@ section .description {
   color: var(--dark-font-color);
 }
 
-article img {
-  width: 250px;
-}
 
 /* BLOCKQUOTES */
 
