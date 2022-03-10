@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Contact from '../components/Contact'
 
 export default function About() {
   return (
@@ -57,7 +56,6 @@ export default function About() {
           </ul>
           <h2>Connect</h2>
           <p>You can contact me by email at <strong>kasparian.mary@gmail.com</strong> I love meeting new people!</p>
-          <Contact />
         </section>
       </article>
     </Layout>

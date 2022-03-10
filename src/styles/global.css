@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Inconsolata&family=Roboto+Mono&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@200;300;500&display=swap"); */
 
 :root {
   /* Colors */
@@ -65,6 +65,7 @@ body {
 body {
   margin: 0;
   font-family: var(--font-family);
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.6rem;
   color: var(--font-color);
@@ -370,10 +371,10 @@ section .description {
   background: var(--blockquote-background-color);
   border-radius: 8px;
   font-family: var(--heading-font-family);
-  font-size: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.5rem;
   color: var(--dark-font-color);
 }
-
 
 /* BLOCKQUOTES */
 
