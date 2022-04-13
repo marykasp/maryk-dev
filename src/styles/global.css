@@ -347,15 +347,6 @@ main {
   color: var(--skin-color);
 }
 
-.navigation nav a.brand::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 40px;
-  background-color: var(--skin-color);
-  top: 80%;
-  left: 23%;
-}
 
 .navigation nav a.brand span {
   white-space: nowrap;

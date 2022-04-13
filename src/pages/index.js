@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGamepad, faBook, faCode, faMicroscope } from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from "react-helmet"
 
 
 import profile from '../assets/profile-pic.png'
@@ -15,6 +16,10 @@ export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Mary Kasparian | Blog</title>
+      </Helmet>
       <article className="hero">
         <header>
           <div className="container">
