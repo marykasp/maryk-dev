@@ -5,7 +5,7 @@
   --bg-black-900: #f9f9fd;
   --bg-black-100: #fff;
   --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
+  --text-black-900: #292742;
   --text-black-700: #504e70;
   --text-cta: #fff;
   --skin-color: #6b5b7d;
@@ -35,7 +35,7 @@ body {
 body {
   margin: 0;
   font-family: var(--font-family);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.6rem;
   color: var(--font-color);
@@ -468,6 +468,9 @@ article li a:hover {
 }
 
 /* BLOG */
+.blog-page {
+  font-weight: 400;
+}
 .blog-page h2 {
   margin-top: 2rem;
   /* border-bottom: 1px solid var(--light-border-color); */
@@ -499,7 +502,8 @@ a.post h3 {
 
 .post-date {
   opacity: 0.5;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
+  font-weight: 500;
   padding: 0;
 }
 
