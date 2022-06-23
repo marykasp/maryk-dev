@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "Hii, I'm Mary.",
-    description: "Student Developer"
+    description: "Student Developer",
   },
   /* Your site config here */
   plugins: [
@@ -15,8 +15,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/src/blog`
-      }
+        path: `${__dirname}/src/blog`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -25,14 +25,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 280,
+              maxWidth: 460,
             },
           },
           {
             resolve: `gatsby-remark-code-titles`,
             options: {
-              className: `code-title`
-            }
+              className: `code-title`,
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -49,12 +49,12 @@ module.exports = {
               escapeEntities: {},
             },
           },
-        ]
-      }
+        ],
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
   ],
 }
